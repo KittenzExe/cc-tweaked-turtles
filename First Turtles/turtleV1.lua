@@ -34,6 +34,8 @@ do
   local downBlock = ""
 
   turtle.refuel()
+  local fuel_level2 = turtle.getFuelLevel()
+  print(("Level = %d"):format(fuel_level2))
 
   if not inspectedFront then
     local has_block, data = turtle.inspect()
